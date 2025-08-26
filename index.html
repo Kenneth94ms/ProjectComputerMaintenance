@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Computer Maintenance - Kenneth Mora - Freelance Technician</title>
+  <meta name="description" content="Freelance computer maintenance: repairs, upgrades, data recovery, remote support and preventive maintenance." />
+  <meta name="author" content="Kenneth Mora Salazar — Freelance Technician" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <!-- Basic Open Graph for sharing -->
+  <meta property="og:title" content="Computer Maintenance adn Repair - Kenneth Mora - Freelance Technician" />
+  <meta property="og:description" content="Fast, reliable computer maintenance and repair services for home & small business." />
+  <meta property="og:type" content="website" />
+
+  <!-- JSON-LD for LocalBusiness (replace placeholder values) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Kenneth - Computer Maintenance",
+    "image": "https://example.com/photo.jpg",
+    "telephone": "+50686808709",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "75m sur asada Potrero Cerrado",
+      "addressLocality": "Potrero Cerrado",
+      "addressRegion": "Cartago",
+      "postalCode": "30703",
+      "addressCountry": "CR"
+    },
+    "url": "https://yourdomain.com",
+    "priceRange": "₡10000 - ₡35000"
+  }
+  </script>
+
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="logo" aria-label="Site logo">
+        <!-- Simple SVG logo -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.2" opacity="0.9"/>
+          <path d="M6 18h12v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2z" fill="currentColor" opacity="0.08" />
+        </svg>
+        <div>
+          <div>Computer Maintenance and Repair</div>
+          <div class="muted" style="font-size:0.8rem">Freelance Technician</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          <!-- Hamburger -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden>
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <ul id="primary-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="lang-switch"><a href="indexesp.html">ES</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section id="home" class="hero" aria-labelledby="home-title">
+      <div>
+        <div class="eyebrow">On-site & Remote</div>
+        <h1 id="home-title">Fast, reliable computer maintenance — at home or remotely</h1>
+        <p class="muted">I offer diagnostics, cleaning, hardware upgrades, data recovery and proactive maintenance for home users and small businesses. Clear pricing, quick turnaround and friendly explanations.</p>
+        <div class="cta-row">
+          <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Service</button>
+          <a class="btn btn-ghost" href="#services">See Services</a>
+        </div>
+
+        <div style="margin-top:1.25rem;" class="hero-card">
+          <div class="stat"><div style="font-size:1.6rem;color:var(--accent);">⭐</div><div><strong>4.9/5</strong><div class="muted" style="font-size:0.85rem">Average rating from happy clients</div></div></div>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-hidden="false">
+        <h3 style="margin:0">Quick facts</h3>
+        <ul class="muted" style="margin-top:.6rem;padding-left:1rem">
+          <li>Same-day diagnostics in many cases</li>
+          <li>Data-backed backup recommendations</li>
+          <li>Transparent pricing, no surprise fees</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2 class="section-title">Services I provide</h2>
+      <div class="grid-3 services">
+        <article class="card">
+          <div style="display:flex;align-items:center">
+            <div class="icon">🛠️</div>
+            <div>
+              <h3 style="margin:0 0 .25rem 0">Diagnostics & repair</h3>
+              <div class="muted">Hardware & software troubleshooting, virus removal, OS reinstall.</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div style="display:flex;align-items:center">
+            <div class="icon">⚡</div>
+            <div>
+              <h3 style="margin:0 0 .25rem 0">Upgrades & performance</h3>
+              <div class="muted">RAM, SSD upgrades, thermal paste replacement, BIOS tuning.</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div style="display:flex;align-items:center">
+            <div class="icon">💾</div>
+            <div>
+              <h3 style="margin:0 0 .25rem 0">Data recovery & backup</h3>
+              <div class="muted">Accidental deletion, drive failure triage, backup strategy setup.</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div style="display:flex;align-items:center">
+            <div class="icon">🌐</div>
+            <div>
+              <h3 style="margin:0 0 .25rem 0">Network & Wi‑Fi</h3>
+              <div class="muted">Router setup, Wi‑Fi optimization, small office networking.</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div style="display:flex;align-items:center">
+            <div class="icon">🧰</div>
+            <div>
+              <h3 style="margin:0 0 .25rem 0">Preventive maintenance</h3>
+              <div class="muted">Cleaning, software updates, scheduled checkups.</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div style="display:flex;align-items:center">
+            <div class="icon">📞</div>
+            <div>
+              <h3 style="margin:0 0 .25rem 0">Remote support</h3>
+              <div class="muted">Secure remote sessions for quick fixes and coaching.</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <h2 class="section-title">Pricing (example)</h2>
+      <div class="pricing">
+        <div class="card price">
+          <h3>Basic check — ₡10,000</h3>
+          <p class="muted">30–45 minutes. Includes diagnostics & short report.</p>
+          <ul class="muted">
+            <li>Virus scan</li>
+            <li>Startup checks</li>
+          </ul>
+          <div style="margin-top:.75rem"><button class="btn btn-primary">Book Basic</button></div>
+        </div>
+
+        <div class="card price">
+          <h3>Repair & cleanup — ₡25,000+</h3>
+          <p class="muted">Price depends on parts & time. Free estimate after diagnostics.</p>
+          <ul class="muted">
+            <li>OS reinstall</li>
+            <li>Malware removal</li>
+          </ul>
+          <div style="margin-top:.75rem"><button class="btn btn-primary">Get Estimate</button></div>
+        </div>
+
+        <div class="card price">
+          <h3>Upgrade service — ₡35,000+</h3>
+          <p class="muted">Parts charged separately. Fast upgrade and testing.</p>
+          <ul class="muted">
+            <li>SSD/RAM install</li>
+            <li>Performance tuning</li>
+          </ul>
+          <div style="margin-top:.75rem"><button class="btn btn-primary">Upgrade Now</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <h2 class="section-title">What clients say</h2>
+      <div class="card testimonials">
+        <div class="testimonial active">
+          <p>“Fixed my laptop the same day — fast and explained everything. Highly recommended!”</p>
+          <div class="muted">— Ana G.</div>
+        </div>
+        <div class="testimonial">
+          <p>“Saved my hard drive data after a crash. Professional and friendly.”</p>
+          <div class="muted">— Roberto C.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">About me</h2>
+      <div class="card">
+        <p style="margin:0">I’m a freelance computer technician with over 3 years of hands‑on experience helping home users and small offices. I focus on clear communication, quick diagnostics and permanent fixes — not band‑aids. I carry common spare parts and can provide receipts for all work performed.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="section-title">Contact / Request a service</h2>
+      <div class="card">
+        <form id="contact-form" novalidate>
+          <div>
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          </div>
+          <div>
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" placeholder="+506 8888 8888" />
+          </div>
+          <div>
+            <label for="service">Service</label>
+            <select id="service" name="service">
+              <option>Diagnostics & repair</option>
+              <option>Upgrades</option>
+              <option>Data recovery</option>
+              <option>Network/Wi‑Fi</option>
+              <option>Remote support</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe the issue or what you need" required></textarea>
+          </div>
+
+          <div style="display:flex;gap:.6rem;align-items:center;margin-top:.5rem">
+            <button type="submit" class="btn btn-primary">Send request</button>
+            <div id="form-msg" class="muted" aria-live="polite"></div>
+          </div>
+        </form>
+
+        <div style="margin-top:1rem" class="muted">Prefer WhatsApp? <a href="https://wa.me/50612345678" style="color:var(--accent);text-decoration:none">Send a message</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+        <div>
+          <strong>Computer Maintenance</strong>
+          <div class="muted">Freelance technician — Serving local area</div>
+        </div>
+        <div class="muted">© <span id="year"></span> Your Name</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  </script>
+
+</body>
+</html>

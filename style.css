@@ -1,0 +1,105 @@
+ /* ==========================
+       Variables & reset
+       ========================== */
+    :root{
+      --bg:#0f1724; /* dark background */
+      --card:#0b1220;
+      --muted:#9aa7b2;
+      --accent:#2445d4; /* teal */
+      --accent-2:#60a5fa; /* blue */
+      --text:#e6eef6;
+      --radius:12px;
+      --container:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,#071028 0%, #0f1724 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+
+    /* container */
+    .container{max-width:var(--container);margin:0 auto;padding:0 1.25rem}
+
+    /* ==========================
+       Header
+       ========================== */
+    header{backdrop-filter: blur(6px);position:sticky;top:0;z-index:40;background:linear-gradient(180deg, rgba(6,10,19,0.8), rgba(6,10,19,0.6));border-bottom:1px solid rgba(255,255,255,0.03)}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0}
+    .logo{display:flex;gap:.6rem;align-items:center;font-weight:700}
+    .logo svg{width:36px;height:36px}
+
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem;align-items:center}
+    nav a{color:var(--text);text-decoration:none;padding:0.5rem;border-radius:8px;font-weight:600}
+    nav a:hover, nav a:focus{background:rgba(255,255,255,0.03);outline:none}
+
+    /* Mobile menu */
+    .menu-btn{display:none;background:transparent;border:0;color:var(--text)}
+
+    /* ==========================
+       Hero
+       ========================== */
+    .hero{padding:3.5rem 0;display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
+    .hero .eyebrow{color:var(--accent);font-weight:700;letter-spacing:0.6px}
+    .hero h1{font-size:2.2rem;margin:.25rem 0}
+    .hero p{color:var(--muted);margin-top:1rem}
+    .cta-row{display:flex;gap:0.75rem;margin-top:1.5rem}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.65rem 1rem;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#cbd1d3}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1.25rem;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+    .stat{display:flex;gap:.75rem;align-items:center}
+    .stat strong{font-size:1.1rem}
+
+    /* ==========================
+       Sections
+       ========================== */
+    section{padding:2.25rem 0}
+    h2.section-title{font-size:1.25rem;margin:0 0 1rem 0}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .card{background:var(--card);padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+
+    .services .icon{width:44px;height:44px;border-radius:10px;display:inline-grid;place-items:center;background:rgba(255,255,255,0.02);margin-right:.6rem}
+
+    /* Pricing */
+    .pricing{display:flex;gap:1rem}
+    .price{flex:1}
+    .price h3{margin-top:0}
+
+    /* Testimonials */
+    .testimonials{position:relative}
+    .testimonial{display:none;padding:1rem}
+    .testimonial.active{display:block}
+    .testimonial p{color:var(--muted)}
+
+    /* Contact form */
+    form{display:grid;gap:.75rem}
+    label{font-size:.85rem;color:var(--muted)}
+    input,textarea,select{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:.6rem;border-radius:8px;color:var(--text);width:100%}
+    input:focus,textarea:focus,select:focus{outline:2px solid rgba(45,212,191,0.14);border-color:var(--accent)}
+
+    .muted{color:var(--muted);font-size:.9rem}
+
+    footer{padding:2rem 0;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+      .pricing{flex-direction:column}
+    }
+    @media (max-width:640px){
+      nav ul{display:none;flex-direction:column;background:linear-gradient(180deg, rgba(6,10,19,0.95), rgba(6,10,19,0.98));position:absolute;right:1rem;top:64px;padding:1rem;border-radius:10px}
+      .menu-btn{display:inline-flex}
+      .grid-3{grid-template-columns:1fr}
+    }
+
+    /* Focus-visible support */
+    :focus{outline:none}
+    :focus-visible{outline:3px solid rgba(96,165,250,0.14);outline-offset:2px}
