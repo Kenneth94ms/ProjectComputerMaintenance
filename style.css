@@ -5,7 +5,7 @@
       --bg:#0f1724; /* dark background */
       --card:#0b1220;
       --muted:#9aa7b2;
-      --accent:#2445d4; /* teal */
+      --accent:#415fe2; /* teal */
       --accent-2:#60a5fa; /* blue */
       --text:#e6eef6;
       --radius:12px;
@@ -103,3 +103,9 @@
     /* Focus-visible support */
     :focus{outline:none}
     :focus-visible{outline:3px solid rgba(96,165,250,0.14);outline-offset:2px}
+
+    .iconsspecialWhiteHeader{
+  height: 30px;
+  width: 30px;
+  fill: white;
+} 
